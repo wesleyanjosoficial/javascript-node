@@ -13,3 +13,6 @@ console.log(
     // location.href = 'http://www.google.com/'
     history
 )
+
+alert(screen.width)
+document.getElementById('width').innerHTML = screen.width
