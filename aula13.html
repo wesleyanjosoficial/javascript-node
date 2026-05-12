@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>childNodes</title>
+</head>
+<body>
+    <button id="btn">Ver lista</button>
+    <div>
+        <h1>Title</h1>
+        <p>Text</p>
+    </div>
+    <p id="result"></p>
+    <script type="text/javascript">
+        console.log(
+            document.documentElement.lastChild,
+            document.documentElement.firstChild
+        )
+
+        console.log(
+            document.body.childNodes
+        )
+    </script>
+</body>
+</html>
