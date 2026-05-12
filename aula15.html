@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parentNode</title>
+</head>
+<body>
+    <div id="brazil">
+        <div id="bahia">
+            <div id="ilheus"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        console.log(
+            document.getElementById('ilheus').parentNode,
+            document.getElementById('bahia').parentNode,
+        )
+
+        console.log(document.getElementById('ilheus').parentNode.parentNode.parentNode.parentNode)
+    </script>
+</body>
+</html>
