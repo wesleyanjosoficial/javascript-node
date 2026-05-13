@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let people = {
+            name: 'wesley',
+            age: 29,
+            happy: true,
+            pets: [
+                'dog',
+                'cat'
+            ],
+            cars: {
+                camaro: {
+                    placa: '123456',
+                    color: 'green'
+                },
+                uno: {
+                    placa: '987654',
+                    color: 'white'
+                }
+            },
+            walk: function(km) {
+                alert(`${people.name} andou ${km} km`)
+            }
+        }
+
+        console.log(people)
+        console.log(people.age)
+        console.log(people.pets[1])
+
+        people.name = 'caio'
+        people.pets[0] = 'arará'
+        console.log(people)
+
+        console.log(people.cars.camaro.color)
+
+        people.walk(20)
+    </script>
+</body>
+</html>
