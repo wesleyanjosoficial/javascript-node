@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>replaceChild</title>
+</head>
+<body>
+    <ul>
+        <li>Café</li>
+        <li>Leite</li>
+        <li>Água</li>
+    </ul>
+    <ul>
+        <li>Pão</li>
+        <li>Queijo</li>
+        <li>Nutella</li>
+    </ul>
+    <script type="text/javascript">
+        var list = document.getElementsByTagName('ul')[0]
+        var items = list.children
+        var newItem = document.createElement('li')
+        newItem.textContent = 'Suco de laranja'
+        list.insertBefore(newItem, items[2])
+        console.log(items)
+
+        var list2 = document.getElementsByTagName('ul')[1]
+        var items2 = list2.children
+        var newItem2 = document.createElement('li')
+        newItem2.textContent = 'Margarina'
+        list2.replaceChild(newItem2, items2[2])
+    </script>
+</body>
+</html>
