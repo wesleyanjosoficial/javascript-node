@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alert prompt confirm</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        alert('Isso aqui é um alert')
+
+        let name = prompt('Digite seu nome')
+        console.log(name)
+
+        let resp = confirm('Tem certeza que deseja excluir este item?')
+        
+        if (resp == true) {
+            alert('Item excluido com sucesso!')
+        } else {
+            alert('Exclusão cancelada')
+        }
+    </script>
+</body>
+
+</html>
