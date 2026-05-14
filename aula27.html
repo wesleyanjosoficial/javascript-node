@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condicional</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let country = 'brazil'
+        let state = 'sp'
+
+        if (country == 'brazil') {
+            console.log('Sou brasileiro!')
+        } else if (state == 'sp') {
+            console.log('Sou paulista!')
+        } else {
+            console.log('Sou gringo!')
+        }
+
+        country = 'eua'
+        state = 'ca'
+
+        switch(country) {
+            case 'brazil':
+                console.log('Sim, Brasil')
+                break
+            case 'eua':
+                console.log('Sim, Estados Unidos')
+                break
+            case 'canada':
+                console.log('Sim, Canadá')
+                break
+            default:
+                console.log('Não encontrado!')
+                break
+        }
+    </script>
+</body>
+</html>
