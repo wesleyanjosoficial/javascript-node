@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model(DOM)</title>
+</head>
+<body>
+    <div id="fruit">laranja</div>
+    <div class="car">gol</div>
+    <div class="car">camaro</div>
+    <script type="text/javascript">
+        console.log(document.getElementById('fruit').innerHTML)
+        console.log(document.getElementsByClassName('car')[0].innerHTML)
+        console.log(document.getElementsByClassName('car')[1].innerHTML)
+    </script>
+</body>
+</html>
