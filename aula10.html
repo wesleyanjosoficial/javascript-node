@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML</title>
+</head>
+<body>
+    <p id="p1">hello world</p>
+    <script type="text/javascript">
+        console.log(document.getElementById('p1').innerHTML)
+        var p = document.getElementById('p1')
+        p.innerHTML = 'new content'
+    </script>
+</body>
+</html>
