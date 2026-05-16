@@ -7,10 +7,20 @@
 </head>
 <body>
     <p id="p1">hello world</p>
+    <img id="image" src="" alt=""/>      
     <script type="text/javascript">
         console.log(document.getElementById('p1').innerHTML)
+        
         var p = document.getElementById('p1')
         p.innerHTML = 'new content'
+        p.style.color = 'red'
+        p.style.backgroundColor = '#333'
+        p.style.height = '400px'
+
+        var img = document.getElementById('image')
+        img.src = 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg'
+        img.alt = 'logo javascript'
+        img.width = '100'
     </script>
 </body>
 </html>
